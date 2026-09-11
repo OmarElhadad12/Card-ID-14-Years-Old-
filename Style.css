@@ -1,0 +1,171 @@
+body {
+    background-color: #1e293b;
+    /* خلفية متدرجة مع خطوط شبكية ناعمة */
+    background-image: 
+        radial-gradient(at 50% 50%, #334155 0px, transparent 50%),
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 100% 100%, 30px 30px, 30px 30px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.card {
+    background-color: rgb(186, 181, 181);
+    padding: 30px;
+    border-radius: 28px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+   transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.95); /* يصغر الزرار بنسبة 5% */
+    background-color: #0056b3; /* يغمق اللون شوية */
+}
+
+.skills span{
+    background-color: #d1d5db; 
+    color: #333;              
+    padding: 4px 10px;       
+    border-radius: 12px;    
+    font-size: 12px;            
+    margin: 0 4px;             
+    display: inline-block;     
+}
+
+/* ترتيب الأيقونات جنب بعض وتوسيطهم */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* مسافة بين الأيقونات */
+    margin-top: 20px;
+}
+
+/* تحديد حجم الصور الخاصة بالأيقونات */
+.social-links img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.6; /* نخلي الأيقونة باهتة شوية في الأول */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* تنعيم الحركة */
+}
+
+/* لما تقف بالماوس على الأيقونة */
+.social-links img:hover {
+    opacity: 1; /* ترجع واضحة تماماً */
+    transform: translateY(-3px); /* تترفع لفوق 3 بكسل */
+}
+
+/* الحركة لما تقف بالماوس على الكارت */
+.card:hover {
+    transform: translateY(-8px); /* يرفع الكارت لفوق 8 بكسل */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /* يكبر الظل */
+}
+
+/* تنسيق شارة الحالة */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    color: #2d3748;
+    margin-bottom: 12px;
+}
+
+/* النقطة الخضراء */
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #10b981;
+    border-radius: 50%;
+    margin-right: 6px;
+    animation: pulse 1.5s infinite; /* تشغيل أنيميشن النبض */
+}
+
+/* كود أنيميشن النبض */
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    }
+}
+
+p {
+    color: #4b5563;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 15px 0;
+   
+    
+}
+
+/* تنسيق شارة الحالة */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    color: #2d3748;
+    margin-bottom: 12px;
+}
+
+/* النقطة الخضراء */
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #10b981;
+    border-radius: 50%;
+    margin-right: 6px;
+    animation: pulse 1.5s infinite; /* تشغيل أنيميشن النبض */
+}
+
+/* كود أنيميشن النبض */
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    }
+}
+
+.site-footer {
+    position: absolute;
+    bottom: 20px;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+ 
